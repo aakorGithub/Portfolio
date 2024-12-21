@@ -1,0 +1,416 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body> 
+    <nav id="desktop-nav">
+      <div class="logo">Anthony Akor</div>
+      <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anthony Akor</div>
+        <div class="hamburger-menu">
+         <div class="hamburger-icon" onclick="toggleMenu()">
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>   
+        </div>
+      </div>    
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+             <img src="./assets/profile-pic.jpg" alt="Anthony Akor profile picture" class="profile-circle" />
+        </div>
+        <div class="section_text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Anthony Akor</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+              <button 
+               class="btn btn-color-2" 
+               onclick="window.open('./assets/resume.pdf')">
+               Download CV
+             </button>
+             <button class="btn btn-color-1" onclick="location.href=' ./#contact'">
+               Contact Info
+             </button>
+         </div>
+         <div id="socials-container">
+            <img 
+            src="./assets/linkedin-logo.png" 
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/anthony-akor/'"
+            />
+            <img 
+            src="./assets/github-icon.png" 
+            alt="My Github profile"
+            class="icon" 
+            onclick="location.href='http://github.com/aakorGithub/'"
+            />
+         </div>
+        <div>
+    </section>
+    <section id="about">
+         <p class="section__text__p1">Get To Know More</p>
+         <h1 class="title">About Me</h1>
+         <div class="section-container">
+           <div class="section__pic-container">
+            <img src=" ./assets/About-pic.png" alt="profile picture" 
+            class="about-pic"
+            />
+         </div>
+          <div class="about-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                   <img 
+                   src="./assets/experience-logo.png" 
+                   alt="Experience icon"
+                   class="icon"
+                   />
+                   <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Coding Bootcamp Grad</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm a passionate Software developer with over 2 years 
+              of hands-on experience in creating dynamic and user-friendly 
+              web applications. My journey into the tech world began with a B.Sc. 
+              in Information Systems, which laid a solid foundation in programming and
+              problem-solving skills. After my degree, I honed my skills and deepened
+              my knowledge by graduating from the rigorous coding bootcamp at App Academy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html-icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css-icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/cpp-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/nodejs-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      <br>
+      
+    <!-- Review Section -->
+    <div class="reviews-section">
+      <h2>Recommendations</h2>
+
+      <!-- Recommendations Recieved -->
+      <div class="review-card">
+          <div class="review-header">
+              <img src="https://media.licdn.com/dms/image/v2/C5603AQE2z8CRA5gO-w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1568286426656?e=1740009600&v=beta&t=O_A_Gxn3SzCLXxmJoAg7ahsWNuuEIrEsaqrmqD63fHs" alt="Kristian Orphe" class="review-author-image">
+              <div class="review-author-info">
+                  <p class="review-author-name">Kristian Orphe</p>
+                  <p class="review-author-title">Enterprise Server Analyst</p>
+              </div>
+          </div>
+
+          <p class="review-text">
+              "I am thrilled to recommend Anthony Akor, a fellow student with whom I had the privilege of studying Systems Analysis and Design at Cal State University Dominguez Hills."
+              <br><br>
+              Anthony's grasp of complex concepts and analytical prowess truly stood out in our coursework. He consistently demonstrated an ability to dissect intricate problems and devise innovative solutions.
+              <br><br>
+              What sets Anthony apart is his collaborative spirit. He actively engaged in group discussions, offering valuable insights and aiding teammates. His effective communication and occasional leadership greatly enhanced our team projects.
+              <br><br>
+              Anthony's dedication to excellence was evident as he pursued additional knowledge beyond our coursework. He is punctual, reliable, and consistently delivers high-quality work.
+              <br><br>
+              In conclusion, I wholeheartedly endorse Anthony Akor for his exceptional Systems Analysis and Design skills. His ability to comprehend, collaborate, and consistently perform bodes well for his future endeavors."
+          </p>
+
+          <p class="review-date">August 16, 2023</p>
+      </div>
+  </div>
+
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/gmaillogo.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">anthonyakor70@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/inlogo.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Anthony Akor. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+                  
