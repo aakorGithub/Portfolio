@@ -22,7 +22,7 @@ Portfolio Link: https://anthonya-portfolio.netlify.app/
 ## Contact
 
 - Email: anthonyakor70@gmail.com
-- GitHub: GitHub: https://github.com/aakorGithub/
+- GitHub: https://github.com/aakorGithub/
 - LinkedIn :https://www.linkedin.com/in/anthony-akor/
 
 
