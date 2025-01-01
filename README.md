@@ -17,7 +17,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 ## How to View
 
 You can view my portfolio live at:  
-Portfolio Link: https://anthonya-portfolio.netlify.app/
+Portfolio Link: https://anthony-ak-portfolio.netlify.app/
 
 ## Contact
 
