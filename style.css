@@ -457,7 +457,7 @@ body {
 }
 
 body {
-    background-color: lightseagreen;
+    background-color: lightskyblue;
     
 }
 
@@ -551,7 +551,7 @@ body {
     text-align: center;
 }
 
-/* Body to ensure reviews section is centered */
+/* Body for review section */
 .reviews-section body {
     display: flex;
     justify-content: center;
@@ -560,3 +560,25 @@ body {
     background-color: lightseagreen;
     color: black;
 }
+
+
+
+
+  /* Work History section */
+  .history-section {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  /* style */
+  .work-hostory {
+    margin-bottom: 20px; 
+  }
+  
+  /*employment history image section */
+  .job-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
