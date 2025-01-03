@@ -101,3 +101,57 @@
       text-align: justify;
     }
   }
+
+
+  /* Review Section */
+  /* Ensure all elements respect the box-sizing property */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .reviews-section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .reviews-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .reviews-section .review-card {
+        padding: 15px;
+    }
+
+    .reviews-section .review-author-image {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .reviews-section .review-author-name {
+        font-size: 1.1em;
+    }
+
+    .reviews-section .review-text {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .reviews-section .review-date {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 769px) {
+    .reviews-section {
+        margin: 40px auto;
+    }
+
+    .reviews-section h2 {
+        font-size: 2.5em;
+    }
+}
