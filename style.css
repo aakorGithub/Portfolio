@@ -587,3 +587,8 @@ h1 img {
   }
   
 
+
+/* First Profile Pic Section */
+  .profile-circle {
+    border-radius: 15px; 
+}
