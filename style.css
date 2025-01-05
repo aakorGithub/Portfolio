@@ -466,9 +466,9 @@ body {
 
 /* Review Section Container */
 .reviews-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 5px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -480,7 +480,7 @@ body {
 .reviews-section h2 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
@@ -489,14 +489,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 10px;
+    margin: 5px 0;
     border: 1px solid lightseagreen;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
     background-color: #fafafa;
     max-width: 800px;
-    width: 100%;
+    
+
+    
 }
 
 /* Review Header (author's image and info) */
@@ -578,6 +580,7 @@ h1 img {
   /* style */
   .work-hostory {
     margin-bottom: 20px; 
+    border-radius: 50%;
   }
   
   /*employment history image section */
