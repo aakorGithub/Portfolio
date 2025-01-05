@@ -464,17 +464,6 @@ body {
 
 /* Scoped Review Section Styles */
 
-/* Parent container to center the review section */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-color: lightskyblue;
-}
-
 /* Review Section Container */
 .reviews-section {
     max-width: 900px;
@@ -501,7 +490,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px  auto;
     border: 1px solid lightseagreen;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
