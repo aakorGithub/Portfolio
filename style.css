@@ -490,7 +490,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px  auto;
     border: 1px solid lightseagreen;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
