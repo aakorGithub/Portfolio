@@ -594,7 +594,7 @@ h1 img {
     display: block;
     margin: 0 auto; 
 }
-  
+
 /* First Profile Pic Section */
 .profile-circle {
     border-radius: 15px; 
@@ -606,4 +606,14 @@ html, body {
     height: 100%;
 }
 
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .job-section {
+        flex-direction: column;
+    }
+    .job-section img {
+        width: 100%;
+        height: auto;
+    }
+}
 
