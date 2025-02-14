@@ -581,13 +581,17 @@ h1 img {
   }
   
   /*employment history image section */
-  .job-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  .job-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     
   }
-  
+  .job-section img {
+    max-width: 100;
+    height: auto;
+    display: block;
+  }
   
 
 
