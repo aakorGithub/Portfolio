@@ -598,14 +598,6 @@ h1 img {
 }
 
 /* Work History Img Session */
-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .Job.history-section img {
-    display: block;
-    margin: 0 auto;
-  }
+
 
 
