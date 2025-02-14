@@ -607,20 +607,3 @@ html, body {
 }
 
 
-/* Get to know me image */
-.get-to-know-me-image {
-    display: block;
-    margin: 0 auto;
-    border-radius: 15px; 
-    max-width: 100%;
-    height: auto;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .section__pic-container,
-    .get-to-know-me-image {
-        width: 100%;
-        height: auto;
-    }
-}
