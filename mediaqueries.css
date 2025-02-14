@@ -183,3 +183,13 @@
         bottom: 1.5rem;
     }
 }
+
+/* Get to Know Me More Pic Styling */
+@media (max-width: 768px) {
+    .section__pic-container,
+    .get-to-know-me-image,
+    .job-section img {
+        width: 100%;
+        height: auto;
+    }
+}
