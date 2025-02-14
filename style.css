@@ -457,7 +457,7 @@ body {
 }
 
 body {
-    background-color: rgb(37, 167, 162)    
+    background-color: rgba(36, 104, 171, 0.458)    
 }
 
 
@@ -593,7 +593,6 @@ h1 img {
     display: block;
   }
   
-
 
 /* First Profile Pic Section */
   .profile-circle {
