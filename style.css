@@ -585,12 +585,14 @@ h1 img {
     display: flex;
     justify-content: center;
     align-items: center; /* Center the images vertically */
+    text-align: center; /* Center the images horizontally */
 }
   
 .job-section img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto; /* Center the images horizontally */
 }
   
 /* First Profile Pic Section */
