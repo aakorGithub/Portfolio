@@ -300,7 +300,11 @@ section {
 }
   
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
   
 .arrow {
@@ -602,6 +606,15 @@ h1 img {
     border-radius: 15px; 
 }
 
+/* About Me Pic Section */
+.about-pic {
+    border-radius: 15px; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 html, body {
     overflow-x: hidden;
     width: 100%;
@@ -610,11 +623,13 @@ html, body {
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-    .job-section {
-        flex-direction: column;
-    }
+    .section__pic-container,
+    .about-pic,
     .job-section img {
         width: 100%;
         height: auto;
+    }
+    .job-section {
+        flex-direction: column;
     }
 }
