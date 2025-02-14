@@ -597,5 +597,9 @@ h1 img {
 }
 
 
-
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
 
