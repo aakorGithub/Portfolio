@@ -597,7 +597,24 @@ h1 img {
     border-radius: 15px; 
 }
 
+
+
 /* Work History Img Session */
+.job-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+/* First Profile Pic Section */
+.profile-circle {
+    border-radius: 15px;
+}
 
-
+/* Specific styles for images in the Job history section */
+.Job.history-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
