@@ -586,7 +586,9 @@ h1 img {
     max-width: 100%;
     height: auto;
     display: block;
+    
   }
+  
   
 
 
@@ -594,6 +596,7 @@ h1 img {
   .profile-circle {
     border-radius: 15px; 
 }
+
 
 
 
