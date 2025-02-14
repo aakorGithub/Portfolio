@@ -461,7 +461,11 @@ body {
 }
 
 body {
+<<<<<<< HEAD
     background-color: lightskyblue;
+=======
+    background-color: rgb(45, 173, 168)    
+>>>>>>> 8efe49f (background color update)
 }
 
 /* Scoped Review Section Styles */
