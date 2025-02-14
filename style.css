@@ -9,9 +9,6 @@
 
 body {
     font-family: "Poppins", sans-serif ;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 html {
@@ -65,6 +62,7 @@ a:hover {
     font-size: 2rem;
 }
 
+
 .logo:hover {
     cursor: default;
 }
@@ -110,7 +108,9 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }    
 
+
 .menu-links a {
+
     display: block;
     padding: 10px;
     text-align: center;
@@ -151,19 +151,19 @@ a:hover {
 .hamburger-icon span:first-child {
     transform: none;
 }
-
 /* SECTION */
 
 section {
-    padding: 4vh 10rem;
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    
 }
 
 .section-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* PROFILE SECTION */
@@ -175,43 +175,44 @@ section {
     height: 80vh;
     align-items: center; 
     margin-top: 3rem; 
+    
 }
-
+  
 .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
+             
 }
+
 
 .section__text {
     align-self: center;
     text-align: center;
     margin-top: 2rem; 
 }
-
+  
 .section__text p {
     font-weight: 600;
 }
-
+  
 .section__text__p1 {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
 }
-
+  
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     text-align: center;    
 }
-
+  
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem; 
 }
-
+  
 #socials-container {
     display: flex;
     justify-content: center;
@@ -219,23 +220,23 @@ section {
     gap: 1rem;
     margin-top: 2rem; 
 }
-
+  
 /* ICONS */
-
+  
 .icon {
     cursor: pointer;
     height: 2rem;
 }
-
+  
 /* BUTTONS */
-
+  
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem; 
 }
-
+  
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
@@ -243,77 +244,71 @@ section {
     width: 8rem;
     border-radius: 2rem;
 }
-
+  
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
-
+  
 .btn-color-1:hover,
 .btn-color-2:hover {
     cursor: pointer;
 }
-
+  
 .btn-color-1,
 .btn-color-2:hover {
     background: rgb(53, 53, 53);
     color: white;
 }
-
+  
 .btn-color-1:hover {
     background: rgb(0, 0, 0);
 }
-
+  
 .btn-color-2 {
     background: none;
 }
-
+  
 .btn-color-2:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
 }
-
+  
 .btn-container {
     gap: 1rem;
 }
-
+  
 /* ABOUT SECTION */
-
+  
 #about {
     position: relative;
-    text-align: center;
-    overflow: hidden;
 }
-
+  
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
+  
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    display: flex;
-    align-items: center;
 }
-
+  
 .about-containers,
 .about-details-container {
     display: flex;
 }
-
+  
 .about-pic {
     border-radius: 2rem;
-    max-width: 100%;
-    height: auto;
 }
-
+  
 .arrow {
     position: absolute;
-    right: 1rem;
+    right: -5rem;
     bottom: 2.5rem;
 }
-
+  
 .details-container {
     padding: 1.5rem;
     flex: 1;
@@ -323,37 +318,37 @@ section {
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
-
+  
 .section-container {
     gap: 4rem;
     height: 80%;
 }
-
+  
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
-
+  
 /* EXPERIENCE SECTION */
-
+  
 #experience {
     position: relative;
 }
-
+  
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
-
+  
 .experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
+  
 .article-container {
     display: flex;
     text-align: initial;
@@ -362,54 +357,55 @@ section {
     gap: 2.5rem;
     justify-content: space-around;
 }
-
+  
 article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
-
+  
 article .icon {
     cursor: default;
 }
-
+  
 /* PROJECTS SECTION */
-
+  
 #projects {
     position: relative;
 }
-
+  
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
 }
-
+  
 .project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
 }
-
+  
 .project-title {
     margin: 1rem;
     color: black;
 }
-
+  
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
 }
 
+                                                  
 /* CONTACT */
-
+  
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
 }
-
+  
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
@@ -420,7 +416,7 @@ article .icon {
     margin: 2rem auto;
     padding: 0.5rem;
 }
-
+  
 .contact-info-container {
     display: flex;
     align-items: center;
@@ -428,26 +424,26 @@ article .icon {
     gap: 0.5rem;
     margin: 1rem;
 }
-
+  
 .contact-info-container p {
     font-size: larger;
 }
-
+  
 .contact-icon {
     cursor: default;
 }
-
+  
 .email-icon {
     height: 2.5rem;
 }
-
+  
 /* FOOTER SECTION */
-
+  
 footer {
     height: 26vh;
     margin: 0 1rem;
 }
-
+  
 footer p {
     text-align: center;
 }
@@ -461,12 +457,9 @@ body {
 }
 
 body {
-<<<<<<< HEAD
-    background-color: lightskyblue;
-=======
-    background-color: rgb(45, 173, 168)    
->>>>>>> 8efe49f (background color update)
+    background-color: rgb(37, 167, 162)    
 }
+
 
 /* Scoped Review Section Styles */
 
@@ -573,67 +566,36 @@ h1 img {
     margin: 0 auto;
 }
 
-/* Work History section */
-.history-section {
+
+  /* Work History section */
+  .history-section {
     text-align: center;
     font-size: 20px;
     margin: 20px;
-}
-
-/* style */
-.work-hostory {
+  }
+  
+  /* style */
+  .work-hostory {
     margin-bottom: 20px; 
     border-radius: 50%;
-}
-
-/*employment history image section */
-.job-section img {
+  }
+  
+  /*employment history image section */
+  .job-section img {
     max-width: 100%;
     height: auto;
     display: block;
-}
+    
+  }
+  
+  
+
 
 /* First Profile Pic Section */
-.profile-circle {
+  .profile-circle {
     border-radius: 15px; 
 }
 
-/* Work History Img Session */
-.job-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
-/* First Profile Pic Section */
-.profile-circle {
-    border-radius: 15px;
-}
 
-/* styles for images in the Job history section */
-.Job.history-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    section {
-        padding: 4vh 2rem;
-    }
-
-    .arrow {
-        right: 0.5rem;
-        bottom: 1.5rem;
-    }
-
-    .section__text__p1 {
-        font-size: 1.2rem;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-}
