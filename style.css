@@ -580,38 +580,35 @@ h1 img {
     border-radius: 50%;
 }
   
-/*employment history image section */
+//* employment history image section */
 .job-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
-  
+
+/* Style for images inside .job-section */
 .job-section img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-/* First Profile Pic Section */
+/* First profile pic section */
 .profile-circle {
-    border-radius: 15px; 
-}
-
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
+    border-radius: 15px;
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
     .job-section {
         flex-direction: column;
+        align-items: center;
     }
     .job-section img {
         width: 100%;
