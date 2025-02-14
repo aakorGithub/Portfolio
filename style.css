@@ -9,6 +9,9 @@
 
 body {
     font-family: "Poppins", sans-serif ;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 html {
@@ -152,15 +155,15 @@ a:hover {
 /* SECTION */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    padding: 4vh 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
 
 .section-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* PROFILE SECTION */
@@ -193,6 +196,8 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .section__text__p2 {
@@ -202,7 +207,7 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem; 
 }
@@ -275,6 +280,8 @@ section {
 
 #about {
     position: relative;
+    text-align: center;
+    overflow: hidden;
 }
 
 .about-containers {
@@ -286,6 +293,8 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 .about-containers,
@@ -295,11 +304,13 @@ section {
 
 .about-pic {
     border-radius: 2rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .arrow {
     position: absolute;
-    right: -5rem;
+    right: 1rem;
     bottom: 2.5rem;
 }
 
@@ -601,4 +612,24 @@ h1 img {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    section {
+        padding: 4vh 2rem;
+    }
+
+    .arrow {
+        right: 0.5rem;
+        bottom: 1.5rem;
+    }
+
+    .section__text__p1 {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
 }
