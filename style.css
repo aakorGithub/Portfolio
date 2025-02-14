@@ -611,7 +611,7 @@ h1 img {
     border-radius: 15px;
 }
 
-/* Specific styles for images in the Job history section */
+/* styles for images in the Job history section */
 .Job.history-section img {
     max-width: 100%;
     height: auto;
