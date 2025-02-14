@@ -574,35 +574,32 @@ h1 img {
     margin: 20px;
   }
   
-  /* style */
-  .work-hostory {
+ /* style */
+.work-hostory {
     margin-bottom: 20px; 
     border-radius: 50%;
-  }
+}
   
-  /*employment history image section */
-  .job-section{
+/*employment history image section */
+.job-section {
     display: flex;
     justify-content: center;
-    align-content: center;
-    
-  }
-  .job-section img {
-    max-width: 100;
+    align-items: center; /* Center the images vertically */
+}
+  
+.job-section img {
+    max-width: 100%;
     height: auto;
     display: block;
-  }
+}
   
-
 /* First Profile Pic Section */
-  .profile-circle {
+.profile-circle {
     border-radius: 15px; 
 }
-
 
 html, body {
     overflow-x: hidden;
     width: 100%;
     height: 100%;
 }
-
