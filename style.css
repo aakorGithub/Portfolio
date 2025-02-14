@@ -598,5 +598,14 @@ h1 img {
 }
 
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .Job.history-section img {
+    display: block;
+    margin: 0 auto;
+  }
 
 
