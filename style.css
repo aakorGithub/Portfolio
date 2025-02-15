@@ -477,6 +477,9 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Heading for the Reviews */
@@ -493,7 +496,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: 20px  auto;
+    margin: 20px auto;
     border: 1px solid lightseagreen;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
@@ -631,5 +634,38 @@ html, body {
     }
     .job-section {
         flex-direction: column;
+    }
+
+    .reviews-section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .reviews-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .reviews-section .review-card {
+        padding: 15px;
+    }
+
+    .reviews-section .review-author-image {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .reviews-section .review-author-name {
+        font-size: 1.1em;
+    }
+
+    .reviews-section .review-text {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .reviews-section .review-date {
+        font-size: 0.9em;
     }
 }
