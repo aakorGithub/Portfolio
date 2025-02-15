@@ -555,87 +555,8 @@ body {
     text-align: center;
 }
 
-/* Body for review section */
-.reviews-section body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: lightseagreen;
-    color: black;
-}
-
-/* Review star given */
-h1 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-
-  /* Work History section */
-  .history-section {
-    text-align: center;
-    font-size: 20px;
-    margin: 20px;
-  }
-  
- /* style */
-.work-hostory {
-    margin-bottom: 20px; 
-    border-radius: 50%;
-}
-  
-/*employment history image section */
-.job-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-    margin-bottom: 20px;
-}
-  
-.job-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* First Profile Pic Section */
-.profile-circle {
-    border-radius: 15px; 
-}
-
-/* About Me Pic Section */
-.about-pic {
-    border-radius: 15px; 
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-}
-
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-    .section__pic-container,
-    .about-pic,
-    .job-section img {
-        width: 100%;
-        height: auto;
-    }
-    .job-section {
-        flex-direction: column;
-    }
-
     .reviews-section {
         margin: 20px;
         padding: 10px;
