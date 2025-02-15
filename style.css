@@ -298,13 +298,16 @@ section {
 .about-details-container {
     display: flex;
 }
-  
+
+/* Get to Know More About me Img */
 .about-pic {
     border-radius: 15px;
-    max-width: 100%;
+    width: 150%;
     height: auto;
     display: block;
     margin: 0 auto;
+    object-fit:  cover;
+    
 }
   
 .arrow {
@@ -607,16 +610,10 @@ h1 img {
 /* First Profile Pic Section */
 .profile-circle {
     border-radius: 15px; 
+    
 }
 
-/* About Me Pic Section */
-.about-pic {
-    border-radius: 15px; 
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
 
 html, body {
     overflow-x: hidden;
