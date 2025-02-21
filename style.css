@@ -463,8 +463,10 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Website body Background Color */
+
 body {
-    background-color: white;   
+    background-color: white;
 }
 
 
