@@ -623,7 +623,7 @@ html, body {
     height: 100%;
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive styles for smaller screens For Mobile & Desktop */
 @media (max-width: 768px) {
     .section__pic-container,
     .about-pic,
@@ -668,5 +668,6 @@ html, body {
         font-size: 0.9em;
     }
 }
+
 
 
