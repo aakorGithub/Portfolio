@@ -669,5 +669,14 @@ html, body {
     }
 }
 
-
+/* Section Job card/Employment History */
+/* Style for the job card */
+.job-card {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px 0; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
 
