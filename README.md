@@ -7,6 +7,8 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 - HTML
 - CSS
 - JavaScript
+- Git
+- GitHub
 
 ## Features
 
