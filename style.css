@@ -466,7 +466,7 @@ body {
 /* Website body Background Color */
 
 body {
-    background-color:white;
+    background-color: white;
 }
 
 
@@ -683,4 +683,33 @@ html, body {
     max-width: 800px;
     width: 100%;
 }
+
+.skills-ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Adjust width as needed */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Optional: Adds a border around the ticker */
+    padding: 10px; /* Optional: Adds padding around the icons */
+}
+
+.skills-content {
+    display: inline-block;
+    animation: ticker 10s linear infinite;
+}
+
+.skills-content a {
+    display: inline-block;
+    margin-right: 20px; /* Space between icons */
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
