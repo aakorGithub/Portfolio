@@ -686,17 +686,20 @@ html, body {
 }
 
 .skills-ticker {
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    padding: 10px; /
+    padding: 10px;
 }
 
 .skills-content {
-    display: inline-block;
-    animation: ticker 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .skills-content a {
@@ -707,6 +710,9 @@ html, body {
 @keyframes ticker {
     0% {
         transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);
