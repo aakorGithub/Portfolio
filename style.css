@@ -447,8 +447,9 @@ article .icon {
 /* FOOTER SECTION */
   
 footer {
+    width: 100%;
+    margin: 0;
     height: 26vh;
-    margin: 0 1rem;
 }
   
 footer p {
@@ -713,3 +714,23 @@ html, body {
 }
 
 
+
+
+/* Footer styles for the website  */
+
+footer {
+    background-color: black;
+    color: white;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
