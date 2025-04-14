@@ -190,7 +190,7 @@ section {
 .section__text {
     align-self: center;
     text-align: center;
-    margin-top: 2rem; 
+    margin-top: 1rem;
 }
   
 .section__text p {
@@ -284,9 +284,9 @@ section {
 }
   
 .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
   
 .about-details-container {
@@ -684,43 +684,6 @@ html, body {
     max-width: 800px;
     width: 100%;
 }
-
-.skills-ticker {
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.skills-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills-content a {
-    display: inline-block;
-    margin-right: 20px; 
-}
-
-@keyframes ticker {
-    0% {
-        transform: translateX(100%);
-    }
-    50% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
-
 
 /* Footer styles for the website  */
 

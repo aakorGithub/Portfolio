@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-        .languages-heading {
-            text-align: center;
-            margin-bottom: 10px; /* Adjust as needed for spacing */
-        }
-    </style>
-  </head>
-  <body> 
+</head>
+<body>
     <nav id="desktop-nav">
-      <div class="logo">Anthony Akor</div>
-      <div>
+        <div class="logo">Anthony Akor</div>
+        <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -31,549 +23,227 @@
     <nav id="hamburger-nav">
         <div class="logo">Anthony Akor</div>
         <div class="hamburger-menu">
-         <div class="hamburger-icon" onclick="toggleMenu()">
-         <span></span>
-         <span></span>
-         <span></span>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>   
-        </div>
-      </div>    
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-             <img src="./assets/profile-pic.jpg" alt="Anthony Akor profile picture" class="profile-circle" />
+            <img src="./assets/profile-pic.jpg" alt="Anthony Akor profile picture" class="profile-circle" />
         </div>
         <div class="section_text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Anthony Akor</h1>
             <p class="section__text__p2">Software Engineer</p>
             <div class="btn-container">
-              <button 
-               class="btn btn-color-2" 
-               onclick="window.open('./assets/resume.pdf')">
-               Download CV
-             </button>
-             <button class="btn btn-color-1" onclick="location.href=' ./#contact'">
-               Contact Info
-             </button>
-         </div>
-         <div id="socials-container">
-            <img 
-            src="./assets/linkedin-logo.png" 
-            alt="My Linkedin profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/anthony-akor/'"
-            />
-            <img 
-            src="./assets/github-icon.png" 
-            alt="My Github profile"
-            class="icon" 
-            onclick="location.href='http://github.com/aakorGithub/'"
-            />
-         </div>
-        <div>
-    </section>
-    <section id="skills">
-        <div class="languages-heading">
-            <h2>Languages</h2>
-        </div>
-        <div class="skills-ticker">
-            <div class="skills-content">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" />
-                </a>
-                <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg" width="36" height="36" alt="C++" />
-                </a>
-                <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" />
-                </a>
-                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" />
-                </a>
-                <a href="https://jquery.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" width="36" height="36" alt="JQuery" />
-                </a>
-                <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" />
-                </a>
-                <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" />
-                </a>
-                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" />
-                </a>
-                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" />
-                </a>
-                <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" />
-                </a>
-                <a href="https://metamask.io/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/metamask-colored.svg" width="36" height="36" alt="MetaMask" />
-                </a>
-                <a href="https://ethereum.org/en/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/ethereum-colored.svg" width="36" height="36" alt="Ethereum" />
-                </a>
-                <a href="https://cloud.google.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg" width="36" height="36" alt="Google Cloud" />
-                </a>
-                <a href="https://aws.amazon.com" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored-dark.svg" width="36" height="36" alt="Amazon Web Services" />
-                </a>
-                <a href="https://apple.com" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/macos-colored-dark.svg" width="36" height="36" alt="MacOS" />
-                </a>
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-logo.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://linkedin.com/in/anthony-akor/'" />
+                <img src="./assets/github-icon.png" alt="My Github profile" class="icon" onclick="location.href='http://github.com/aakorGithub/'" />
             </div>
         </div>
     </section>
     <section id="about">
-         <p class="section__text__p1">Get To Know More</p>
-         <h1 class="title">About Me</h1>
-         <div class="section-container">
-           <div class="section__pic-container">
-            <img src=" ./assets/about-pic.png" alt="profile picture" 
-            class="about-pic"
-            />
-         </div>
-          <div class="about-details-container">
-              <div class="about-containers">
-                  <div class="details-container">
-                   <img 
-                   src="./assets/experience-logo.png" 
-                   alt="Experience icon"
-                   class="icon"
-                   />
-                   <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="profile picture" class="about-pic" />
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />Coding Bootcamp Grad</p>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience-logo.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree<br />Coding Bootcamp Grad</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! I'm a passionate Software Engineer with over 2 years of hands-on experience in creating dynamic and user-friendly web applications. My journey into the tech world began with studying Computer Science and earned my BSC in Information Systems, which laid a solid foundation in programming and problem-solving skills. After my degree, I honed my skills and deepened my knowledge by graduating from the rigorous coding bootcamp at App Academy.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! I'm a passionate Software Engineer with over 2 years 
-              of hands-on experience in creating dynamic and user-friendly 
-              web applications. My journey into the tech world began with 
-              studying Computer Science and earned my BSC in Information Systems, 
-              which laid a solid foundation in programming and problem-solving skills. 
-              After my degree, I honed my skills and deepened my knowledge by graduating 
-              from the rigorous coding bootcamp at App Academy.            </p>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/html-icon.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/html-icon.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css-icon.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javascript-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/react-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/python-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/git-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/css-icon.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/cpp-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/nodejs-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mysql-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/sql-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/javascript-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/react-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/python-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/git-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/cpp-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/nodejs-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mysql-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/sql-logo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/Portfolio.git'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://anthony-ak-portfolio.netlify.app'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/tic-tac-toe.git'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://akor1awsbucket.s3.amazonaws.com/waves.html?versionId=null'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pacman Game</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/Pacman-Game.git'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/Pacman-Game.git'">Live Demo</button>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aakorGithub/Portfolio.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://anthony-ak-portfolio.netlify.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aakorGithub/tic-tac-toe.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://akor1awsbucket.s3.amazonaws.com/waves.html?versionId=null'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-
-            <br><br>
-            <br><br>
-
-            <h2 class="experience-sub-title project-title">Pacman Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aakorGithub/Pacman-Game.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aakorGithub/Pacman-Game.git'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-
-
-
-
-  <br>
-  <br>
-  <br>
-      
-
-
-<!-- Employment History -->
-<div class="job-section">
-  <h1 class="work-history">EMPLOYMENT HISTORY</h1>
-  <br>
-  <br>
-  <br>
-
-   <!-- Work History 1 -->
-  <div class="job-card">
-    <br>
-    <br>
-    <br>
-  <h2 class="work-history"></h2>
-  <h2 style="font-size: 2em;">Current Position</h2>
-  <br>
-  <br>
-  <br>
-  <p>Software Developer</p>
-  
-  <h2>Reality Ai</h2>
-  <br>
-  <br>
-  <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFHxq25f9WuQg/company-logo_200_200/company-logo_200_200/0/1730206717757/reality_ai_labs_logo?e=1748476800&v=beta&t=PFTKqMCRsSPLMK6rR_BloBI_VZ24H6-xsQQ6dZLI77k" alt="Reality AI Lab">
-  <br>
-  <br>
-  <div class="job-section"></div>
-  <div style="text-align: center;"></div>
-    <p>
-      As a Software Developer at Reality AI Lab, I contributed to building and refining the full-stack architecture for Marvel AI, an AI Teaching Assistant, and Sky AI, an AI Career Coach. My work focused on creating user-friendly and scalable AI-powered education and career tools. Key responsibilities included:
-    </p>
-    <br><br>
-
-    <p>Designed and implemented front-end interfaces using ReactJS and integrated them with scalable back-end services using Node.js and Python.</p>
-    <br>
-    <p>Deployed robust applications on Google Cloud Run, ensuring real-time responsiveness and seamless user experience.</p>
-    <br>
-    <p>Managed structured and unstructured data using Firestore DB, Firebase Realtime DB, and Redis to support fast and reliable AI workflows.</p>
-    <br>
-    <p>Conducted comprehensive testing, identified and resolved bugs, and utilized LogRocket and Log Explorer for performance monitoring.</p>
-    <br>
-    <p> Worked alongside cross-functional teams to bring cutting-edge solutions like AI Agents and real-time recommendation systems to life.</p>
-    <br>
-    <p>Maintained source code, performed code reviews, and contributed to team workflows through GitHub and automated CI/CD pipelines using GitHub Actions.</p>
-  </div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <!-- Work History 2 -->
-  <div class="job-section">
-    <br>
-    <br>
-    <br>
-  <h2 class="work-history"></h2>
-  <h2>UPWORK</h2>
-  <p>Software Engineer</p>
-  <img src="https://cdn.prod.website-files.com/63131d8f6c1bca07c36b817d/6433db5c92ccecf3c43f8c85_gif%202.gif" alt="Upwork">
-  </div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <h2>SPACEX</h2>
-  <p>Propulsion Technician</p>
-  <img src="https://media.cgtrader.com/variants/3Dn2oNY1SRnabB1BKsu6xUks/c4dfab5c8344acd5afd54555808fa611d594931395cc672cd1ed830a80a8f66c/Starship%200000.jpg" alt="SpaceX">
-</div>
-<br>
-<br>
-<br>
-
-<!-- Work History 2 -->
-<div class="job-section">
-  <br>
-  <br>
-  <br>
-
-  <h2 class="work-history">GITHUB</h2>
-  <p>Software Engineer</p>
-  <img src="https://venturebeat.com/wp-content/uploads/2014/06/55f2798a-eb56-11e3-92e7-b79ad791a697.gif" alt="GitHub">
-</div>
-<br>
-<br>
-<br>
-
-    <!-- Review Section -->
-    <div class="reviews-section">
-      <h2>What People Say About Me</h2>
-      <h1><img src="https://th.bing.com/th?id=OIP.xAL8T45aX4NNNprSjRA8TgHaBz&w=349&h=85&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt=""></h1>
-
-      <!-- What People Say About Me -->
-      <div class="review-card">
-          <div class="review-header">
-              <img src="https://media.licdn.com/dms/image/v2/C5603AQE2z8CRA5gO-w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1568286426748?e=1745452800&v=beta&t=TVKKYwrjwpq1a2dH1Gw9_ZQZRrKmRppbHCVhEDYg28A" alt="Kristian Orphe" class="review-author-image">
-              <div class="review-author-info">
-                  <p class="review-author-name">Kristian Orphe</p>
-                  <p class="review-author-title">Enterprise Server Analyst</p>
-              </div>
-          </div>
-
-          <p class="review-text">
-              "I am thrilled to recommend Anthony Akor, a fellow student with whom I had the privilege of studying Systems Analysis and Design at Cal State University Dominguez Hills."
-              <br><br>
-              Anthony's grasp of complex concepts and analytical prowess truly stood out in our coursework. He consistently demonstrated an ability to dissect intricate problems and devise innovative solutions.
-              <br><br>
-              What sets Anthony apart is his collaborative spirit. He actively engaged in group discussions, offering valuable insights and aiding teammates. His effective communication and occasional leadership greatly enhanced our team projects.
-              <br><br>
-              Anthony's dedication to excellence was evident as he pursued additional knowledge beyond our coursework. He is punctual, reliable, and consistently delivers high-quality work.
-              <br><br>
-              In conclusion, I wholeheartedly endorse Anthony Akor for his exceptional Systems Analysis and Design skills. His ability to comprehend, collaborate, and consistently perform bodes well for his future endeavors."
-          </p>
-
-          <p class="review-date">August 16, 2023</p>
-      </div>
-  </div>
-
-
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/gmaillogo.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">anthonyakor70@gmail.com</a></p>
+      <br>
+      <br>
+      <br>
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/gmaillogo.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">anthonyakor70@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/inlogo.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/inlogo.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
+        <br>
+        <br>
+        <br>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Anthony Akor. All Rights Reserved.</p>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Anthony Akor. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
-
-
-
