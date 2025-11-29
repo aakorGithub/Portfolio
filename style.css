@@ -709,3 +709,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.text-container {
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
