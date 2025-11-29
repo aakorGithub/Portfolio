@@ -275,9 +275,9 @@ section {
 }
   
 .btn-color-2 {
-    background: transparent;
+    background: black;
     color: white;
-    border: 1px solid white;
+    border: 1px solid white(181, 175, 175);
 }
 
   
