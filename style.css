@@ -225,7 +225,9 @@ section {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
-    margin-top: 2rem; 
+    margin-top: 2rem;
+    filter: brightness(3);
+
 }
   
 /* ICONS */
