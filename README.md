@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=aakorGithub" alt="Profile views"/>
+</p>
+
+
 # My Portfolio Website
 
 Welcome to my personal portfolio website! This site showcases my skills, projects, and experience as a software engineer.
