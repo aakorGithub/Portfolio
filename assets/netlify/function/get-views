@@ -1,0 +1,35 @@
+const AWS = require('aws-sdk');
+
+
+AWS.config.update({
+  accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
+  region: process.env.MY_AWS_REGION
+});
+
+const dynamo = new AWS.DynamoDB.DocumentClient();
+
+exports.handler = async () => {
+  const params = {
+    TableName: 'SiteAnalytics',
+    Key: { page_id: 'homepage' },
+    UpdateExpression: 'ADD #v :inc',
+    ExpressionAttributeNames: { '#v': 'views' },
+    ExpressionAttributeValues: { ':inc': 1 },
+    ReturnValues: 'UPDATED_NEW'
+  };
+
+  try {
+    const data = await dynamo.update(params).promise();
+    return {
+      statusCode: 200,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ views: data.Attributes.views }),
+    };
+  } catch (err) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: err.message }),
+    };
+  }
+};
