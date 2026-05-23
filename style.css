@@ -646,6 +646,20 @@ html, body {
 
 /* Responsive styles for smaller screens For Mobile & Desktop */
 @media (max-width: 768px) {
+    section {
+        margin: 0 1rem;
+    }
+
+    #profile {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .section__text {
+        padding: 0 1rem;
+    }
+
     .section__pic-container,
     .about-pic,
     .job-section img {
