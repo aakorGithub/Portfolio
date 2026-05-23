@@ -740,11 +740,6 @@ footer a:hover {
 }
 
 .text-container {
-    padding: 1.5rem;
-    background: rgb(30, 30, 30);
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
     text-align: center;
     color: white;
 }
