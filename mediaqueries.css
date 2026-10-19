@@ -27,6 +27,10 @@
     .section-container {
         display: block;
     }
+    #profile {
+        height: auto;
+        margin-bottom: 3rem;
+    }
     .arrow {
         display: none;
     }
@@ -42,6 +46,23 @@
         height: 275px;
         margin: 0 auto 2rem;
     }
+    #profile .section__pic-container {
+        width: 220px;
+        height: 220px;
+    }
+    #profile .title {
+        font-size: 2.25rem;
+    }
+    #profile .section__text__p2 {
+        font-size: 1.3rem;
+    }
+    #profile #socials-container img {
+        height: 1.5rem;
+    }
+    #profile .btn {
+        width: 7rem;
+        padding: 0.65rem;
+    }
     .about-containers {
         margin-top: 0;
     }
@@ -53,7 +74,7 @@
         height: 40vh;
     }
     #profile {
-        height: 83vh;
+        height: auto;
         margin-bottom: 0;
     }
     article {
@@ -90,6 +111,16 @@
         width: auto;
         height: 46vw;
         justify-content: center;
+    }
+    #profile .section__pic-container {
+        width: min(40vw, 170px);
+        height: min(40vw, 170px);
+    }
+    #profile .title {
+        font-size: 1.8rem;
+    }
+    #profile .section__text__p2 {
+        font-size: 1.1rem;
     }
     .section__text__p2 {
         font-size: 1.25rem;
@@ -183,4 +214,3 @@
         bottom: 1.5rem;
     }
 }
-
