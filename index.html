@@ -1,266 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Anthony Akor | Systems & Software Engineer</title>
+<meta name="description" content="Portfolio of Anthony Akor: systems engineering graduate student and full-stack developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f17;--surface:#121826;--border:#222b3d;--text:#e8ecf4;--muted:#93a0b8;--accent:#5b8cff;--accent2:#22d3b6;--radius:16px}
+:root[data-theme="light"]{--bg:#f6f8fc;--surface:#fff;--border:#e1e6f0;--text:#0f172a;--muted:#5b6780;--accent:#2f63f0;--accent2:#0f9d8a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:clamp(16px,.9vw + 7px,24px);scroll-behavior:smooth;scroll-padding-top:5rem}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+section{padding:6rem 0}
+.eyebrow{color:var(--accent2);font-weight:600;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-.02em;margin:6px 0 40px}
+nav{position:fixed;inset:0 0 auto;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--border)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4rem}
+.logo{font-weight:800;letter-spacing:-.02em}
+.links{display:flex;gap:1.75rem;align-items:center}
+.links a{color:var(--muted);font-size:.92rem;font-weight:500;transition:color .2s}
+.links a:hover{color:var(--text)}
+#theme{background:none;border:1px solid var(--border);color:var(--text);width:2.25rem;height:2.25rem;border-radius:50%;cursor:pointer;font-size:1rem}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:1.5rem;cursor:pointer}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:6rem;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:600px;height:600px;right:-150px;top:-100px;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 35%,transparent),transparent 65%);filter:blur(40px);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:3.5rem;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.05;letter-spacing:-.04em;font-weight:800;margin:10px 0 16px}
+.akor{color:#fff}
+:root[data-theme="light"] .akor{color:var(--text)}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.1rem;max-width:32.5rem}
+.cta{display:flex;gap:.75rem;margin-top:2rem;flex-wrap:wrap}
+.btn{padding:.75rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--border);transition:transform .2s,box-shadow .2s,background .2s,border-color .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn,.btn.primary{background:#fff;border-color:#fff;color:#0b0f17}
+:root[data-theme="light"] .btn,:root[data-theme="light"] .btn.primary{background:var(--text);border-color:var(--text);color:#fff}
+.btn:hover,.btn.primary:hover{background:#2563eb;border-color:#2563eb;color:#fff;box-shadow:0 8px 24px rgba(37,99,235,.4)}
+.avatar{width:100%;max-width:21rem;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%;border-radius:28px;border:1px solid var(--border);justify-self:center;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.avatar.ph{font-size:5rem;letter-spacing:-.04em}
+.thumb.ph{padding:16px;font-size:1rem}
+.grid{display:grid;gap:1.25rem}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{font-size:1.1rem;margin-bottom:6px}
+.card p,.about p{color:var(--muted)}
+.about p{max-width:45rem;font-size:1.05rem;margin-bottom:32px}
+.chips{display:flex;flex-wrap:wrap;gap:.625rem;margin-top:1rem}
+.chip{display:inline-flex;gap:.5rem;align-items:center;padding:.5rem .875rem;border:1px solid var(--border);border-radius:999px;background:var(--bg);font-size:.88rem;font-weight:500}
+.chip img{width:1.25rem;height:1.25rem;object-fit:contain;border-radius:4px}
+.chip small{color:var(--accent2);font-weight:600}
+.skills h3{margin:2.25rem 0 0;font-size:1rem;color:var(--muted);font-weight:600}
+.proj .thumb{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;margin-bottom:18px;background:var(--bg);border:1px solid var(--border)}
+.proj .row{display:flex;gap:1rem;margin-top:1rem;font-weight:600;font-size:.9rem;color:var(--accent)}
+.contact{text-align:center}
+.contact h2{margin-bottom:12px}
+.contact p{color:var(--muted);margin-bottom:28px}
+footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);font-size:.88rem;text-align:center}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:820px){
+ .hero .wrap,.g2,.g3{grid-template-columns:1fr}
+ .avatar{max-width:14rem;order:-1;justify-self:start}
+ .burger{display:block}
+ .links{position:absolute;top:4rem;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--border);display:none;padding:12px 24px}
+ .links.open{display:flex}.links a{padding:12px 0}
+}
+</style>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Anthony Akor</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Anthony Akor</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Anthony Akor profile picture" class="profile-circle" />
-        </div>
-        <div class="section_text" style="text-align: center;">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Anthony Akor</h1>
-            <p class="section__text__p2">Systems Engineer | Software Engineer</p>
-            <div class="btn-container" style="justify-content: center;">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container" style="justify-content: center;">
-                <img src="./assets/linkedin-logo.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://linkedin.com/in/anthony-akor/'" />
-                <img src="./assets/github-icon.png" alt="My Github profile" class="icon" onclick="location.href='http://github.com/aakorGithub/'" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; flex-direction: row-reverse;">
-            <div class="section__pic-container" style="position: relative; z-index: 1; flex: 0 1 300px; max-width: 100%; order: 2;">
-                <img src="./assets/about-pic.png" alt="profile picture" class="about-pic" style="display: block; width: 100%; height: auto; object-fit: contain;" />
-            </div>
-            <div class="about-details-container" style="order: 1; flex: 1 1 320px;">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience-logo.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>Self Taught<br />Frontend Development & Backend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>M.S, B.S<br /> M.S Systems Engineering at California State University Dominguez Hills<br /> Earned B.S Information Systems at California State University Dominquez Hills</p>
-                    </div>
-                </div>
-                <div class="text-container" style="text-align: left;">
-                    <p>
-                       I'm Anthony Akor, a graduate student at California State University Dominguez Hills, pursuing a Master's in Systems Engineering. I also hold a Bachelor's in Business Admin: Information Systems from California State University, Dominguez Hills.
-                       I'm a full-stack developer who loves turning ideas into real, working applications.
-                       From the database to the user interface, I take ownership of the entire build and make
-                       sure every piece works the way it should.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/html-icon.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/css-icon.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/javascript-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/react-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>React</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/python-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/git-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development & Design Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/cpp-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/nodejs-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/mysql-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/sql-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/matlab-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Matlab</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/solidworks-logo.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>SolidWorks</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Portfolio Website</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/Portfolio.git'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://anthony-ak-portfolio.netlify.app'">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/tic-tac-toe.git'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://tictactoegameplayproject.netlify.app/'">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title"> FPV Drone Systems Engineering</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/FPV-Drone-Systems-Engineering'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aakorGithub/FPV-Drone-Systems-Engineering'">Live Demo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-    <section id="contact">
-      <br>
-      <br>
-      <br>
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/gmaillogo.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:examplemail@gmail.com">anthonyakor70@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/inlogo.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2026 Anthony Akor.</p>
-    </footer>
-    <script src="script.js"></script>
+<nav><div class="wrap">
+ <a href="#top" class="logo">Anthony</a>
+ <button class="burger" id="burger" aria-label="Menu">☰</button>
+ <div class="links" id="links">
+  <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  <button id="theme" aria-label="Toggle theme">◐</button>
+ </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div>
+  <span class="eyebrow">Hello, I’m</span>
+  <h1>Anthony <span class="akor">Akor</span></h1>
+  <p>Systems Engineer &amp; Software Engineer. I turn ideas into real, working applications, from the database to the user interface.</p>
+  <div class="cta">
+   <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener" id="cv">Download CV</a>
+   <a class="btn" href="#contact">Contact me</a>
+   <a class="btn" href="https://github.com/aakorGithub" target="_blank" rel="noopener">GitHub</a>
+   <a class="btn" href="https://www.linkedin.com/in/anthony-akor/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+ </div>
+ <img class="avatar" data-ph="AA" src="assets/profile-pic.jpg" alt="Portrait of Anthony Akor">
+</div></header>
+
+<section id="about" class="about"><div class="wrap reveal">
+ <span class="eyebrow">Get to know more</span><h2>About me</h2>
+ <p>I’m a graduate student at California State University, Dominguez Hills, pursuing a Master’s in Systems Engineering, and I hold a Bachelor’s in Business Administration: Information Systems from the same university. I’m a full-stack developer who takes ownership of the entire build and makes sure every piece works the way it should.</p>
+ <div class="grid g2">
+  <div class="card"><h3>Education</h3><p>M.S. Systems Engineering, CSUDH<br>B.S. Business Administration: Information Systems, CSUDH</p></div>
+  <div class="card"><h3>Experience</h3><p>Self-taught in frontend and backend development.</p></div>
+ </div>
+</div></section>
+
+<section id="skills" class="skills"><div class="wrap reveal">
+ <span class="eyebrow">Explore my</span><h2>Skills</h2>
+ <h3>Frontend &amp; tooling</h3>
+ <div class="chips">
+  <span class="chip"><img src="assets/html-icon.png" alt="" onerror="this.remove()">HTML <small>Experienced</small></span><span class="chip"><img src="assets/css-icon.png" alt="" onerror="this.remove()">CSS <small>Experienced</small></span>
+  <span class="chip"><img src="assets/javascript-logo.png" alt="" onerror="this.remove()">JavaScript <small>Experienced</small></span><span class="chip"><img src="assets/react-logo.png" alt="" onerror="this.remove()">React <small>Intermediate</small></span>
+  <span class="chip"><img src="assets/python-logo.png" alt="" onerror="this.remove()">Python <small>Experienced</small></span><span class="chip"><img src="assets/git-logo.png" alt="" onerror="this.remove()">Git <small>Experienced</small></span>
+ </div>
+ <h3>Backend, data &amp; design</h3>
+ <div class="chips">
+  <span class="chip"><img src="assets/cpp-logo.png" alt="" onerror="this.remove()">C++ <small>Experienced</small></span><span class="chip"><img src="assets/nodejs-logo.png" alt="" onerror="this.remove()">Node.js <small>Experienced</small></span>
+  <span class="chip"><img src="assets/mysql-logo.png" alt="" onerror="this.remove()">MySQL <small>Experienced</small></span><span class="chip"><img src="assets/sql-logo.png" alt="" onerror="this.remove()">SQL <small>Experienced</small></span>
+  <span class="chip"><img src="assets/matlab-logo.png" alt="" onerror="this.remove()">MATLAB <small>Experienced</small></span><span class="chip"><img src="assets/solidworks-logo.png" alt="" onerror="this.remove()">SolidWorks <small>Experienced</small></span>
+ </div>
+</div></section>
+
+<section id="projects" class="proj"><div class="wrap reveal">
+ <span class="eyebrow">Browse my recent</span><h2>Projects</h2>
+ <div class="grid g3">
+  <article class="card"><img class="thumb" src="assets/project-1.png" data-ph="Portfolio Website" alt="Portfolio website screenshot" loading="lazy">
+   <h3>Portfolio Website</h3><p>This site: responsive, themeable, and built with plain HTML, CSS, and JavaScript.</p>
+   <div class="row"><a href="https://github.com/aakorGithub/Portfolio" target="_blank" rel="noopener">GitHub ↗</a><a href="https://anthony-ak-portfolio.netlify.app/" target="_blank" rel="noopener">Live demo ↗</a></div></article>
+  <article class="card"><img class="thumb" src="assets/project-2.png" data-ph="Tic-Tac-Toe" alt="Tic-Tac-Toe screenshot" loading="lazy">
+   <h3>Tic-Tac-Toe</h3><p>A browser game built with JavaScript.</p>
+   <div class="row"><a href="https://github.com/aakorGithub/tic-tac-toe" target="_blank" rel="noopener">GitHub ↗</a><a href="https://tictactoegameplayproject.netlify.app/" target="_blank" rel="noopener">Live demo ↗</a></div></article>
+  <article class="card"><img class="thumb" src="assets/project-3.png" data-ph="FPV Drone Systems" alt="FPV drone case study" loading="lazy">
+   <h3>FPV Drone Systems Engineering</h3><p>A systems engineering case study covering requirements, architecture, and trade-offs.</p>
+   <div class="row"><a href="https://github.com/aakorGithub/FPV-Drone-Systems-Engineering" target="_blank" rel="noopener">GitHub ↗</a></div></article>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap reveal">
+ <span class="eyebrow">Get in touch</span><h2>Let’s work together</h2>
+ <p>Open to collaboration and job opportunities.</p>
+ <div class="cta" style="justify-content:center">
+  <a class="btn primary" href="mailto:anthonyakor70@gmail.com">anthonyakor70@gmail.com</a>
+  <a class="btn" href="https://www.linkedin.com/in/anthony-akor/" target="_blank" rel="noopener">LinkedIn</a>
+ </div>
+</div></section>
+
+<footer>Copyright © 2026 Anthony Akor.</footer>
+
+<script>
+const root=document.documentElement;
+try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: light)').matches)root.dataset.theme='light'}catch(e){}
+document.getElementById('theme').onclick=()=>{const n=root.dataset.theme==='light'?'dark':'light';root.dataset.theme=n;try{localStorage.setItem('theme',n)}catch(e){}};
+const links=document.getElementById('links');
+document.getElementById('burger').onclick=()=>links.classList.toggle('open');
+links.addEventListener('click',e=>{if(e.target.tagName==='A')links.classList.remove('open')});
+document.querySelectorAll('img[data-ph]').forEach(img=>{
+ const swap=()=>{const d=document.createElement('div');d.className=img.className+' ph';d.textContent=img.dataset.ph;d.setAttribute('role','img');d.setAttribute('aria-label',img.alt);img.replaceWith(d)};
+ if(img.complete&&!img.naturalWidth)swap();else img.addEventListener('error',swap,{once:true});
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
