@@ -161,6 +161,11 @@ section {
     display: flex;
 }
 
+iframe[src*="youtube"] {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
 /* PROFILE SECTION */
 
 #profile {
