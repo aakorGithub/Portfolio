@@ -15,6 +15,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    font-size: 90%;
 }
 
 p {
@@ -173,8 +174,8 @@ section {
   
 #profile .section__pic-container {
     display: flex;
-    height: 300px;
-    width: 300px;
+    height: clamp(180px, 24vw, 250px);
+    width: clamp(180px, 24vw, 250px);
     margin: auto 0;
 }
 
@@ -599,8 +600,8 @@ html, body {
     }
 
     .section__pic-container {
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
     }
 
     .title {
