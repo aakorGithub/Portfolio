@@ -81,6 +81,13 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
  .links{position:absolute;top:4rem;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--border);display:none;padding:12px 24px}
  .links.open{display:flex}.links a{padding:12px 0}
 }
+.company-logo {
+  width: 200%;
+  max-width: 20rem;
+  height: 10rem;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
 </style>
 </head>
 <body>
@@ -120,8 +127,14 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
   </div>
  </div>
  <div class="grid g2">
-  <div class="card experience-card"><h3>Experience</h3>
-   <p><strong>Propulsion Technician</strong> · Feb 2020 – Nov 2021<br>SpaceX · Hawthorne, CA</p>
+  <div class="card experience-card">
+   <img
+    class="company-logo"
+    src="assets/Spacex Logo.png"
+    alt="SpaceX logo"
+   >
+   <h3>Experience</h3>
+   <p><strong>Propulsion Specialist</strong> · Feb 2020 – Nov 2021<br>SpaceX · Hawthorne, CA</p>
    <ul style="color:var(--muted);padding-left:1.25rem">
     <li>Assembled, installed, and tested propulsion systems and components in support of launch vehicle integration.</li>
     <li>Tracked proof testing and analyzed engine stress test data using DAQ software for Starship engine components at SpaceX’s Texas R&amp;D facility; approximately 80% of components passed proof testing.</li>
