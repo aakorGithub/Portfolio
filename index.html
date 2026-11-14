@@ -52,6 +52,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 .card h3{font-size:1.1rem;margin-bottom:6px}
 .card p,.about p{color:var(--muted)}
 .about p{max-width:45rem;font-size:1.05rem;margin-bottom:32px}
+.about .grid.g2{gap:2rem;margin-top:2rem}
+.about .experience-card,.about .education-card{text-align:center}
+.about .experience-card ul{max-width:42rem;margin:1rem auto 0;text-align:left}
 .video-wrap{margin-top:2rem;display:grid;gap:1rem}
 .video-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;overflow:hidden}
 .video-card h3{font-size:1.1rem;margin-bottom:14px;text-align:center}
@@ -117,8 +120,16 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
   </div>
  </div>
  <div class="grid g2">
-  <div class="card"><h3>Education</h3><p>M.S. Systems Engineering, CSUDH<br>B.S. Information Systems, CSUDH</p></div>
-  <div class="card"><h3>Experience</h3><p>Self-taught in frontend and backend development.</p></div>
+  <div class="card experience-card"><h3>Experience</h3>
+   <p><strong>Propulsion Technician</strong> · Feb 2020 – Nov 2021<br>SpaceX · Hawthorne, CA</p>
+   <ul style="color:var(--muted);padding-left:1.25rem">
+    <li>Assembled, installed, and tested propulsion systems and components in support of launch vehicle integration.</li>
+    <li>Tracked proof testing and analyzed engine stress test data using DAQ software for Starship engine components at SpaceX’s Texas R&amp;D facility; approximately 80% of components passed proof testing.</li>
+    <li>Inspected engine components using micrometers, calipers, and laser marking equipment for precision measurement and part marking, handling cleanroom hardware under strict contamination control and quality standards.</li>
+    <li>Supported engine build, system integration, and launch pad preparation across multiple mission lifecycles.</li>
+   </ul>
+  </div>
+  <div class="card education-card"><h3>Education</h3><p>M.S. Systems Engineering, CSUDH<br>B.S. Information Systems, CSUDH</p></div>
  </div>
 </div></section>
 
