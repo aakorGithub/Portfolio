@@ -48,14 +48,15 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 .thumb.ph{padding:16px;font-size:1rem}
 .grid{display:grid;gap:1.25rem}
 .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem;transition:transform .25s,border-color .25s}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.2rem;transition:transform .25s,border-color .25s}
 .card:hover{transform:translateY(-4px);border-color:var(--accent)}
 .card h3{font-size:1.1rem;margin-bottom:6px}
 .card p,.about p{color:var(--muted)}
 .about p{max-width:45rem;font-size:1.05rem;margin-bottom:32px}
-.about .grid.g2{gap:2rem;margin-top:4rem}
+.about .grid.g2{gap:1.25rem;margin-top:3rem}
 .about .experience-card,.about .education-card{text-align:center}
 .about .experience-card ul{max-width:42rem;margin:1rem auto 0;text-align:left}
+.work-history-title{text-align:center;margin:0 0 1.5rem;font-size:1.5rem}
 .video-wrap{margin-bottom:8rem;margin-top:2rem}
 .video-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;overflow:hidden}
 .video-card h3{font-size:1.1rem;margin-bottom:14px;text-align:center}
@@ -133,6 +134,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
    </div>
   </div>
  </div>
+ <h3 class="work-history-title">Work History</h3>
  <div class="grid g2">
   <div class="card experience-card" style="order:1;">
     <img class="company-logo" src="assets/stealth_logo.png" alt="Stealth Startup logo">
