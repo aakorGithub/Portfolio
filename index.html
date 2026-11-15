@@ -28,13 +28,14 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 #theme{background:none;border:1px solid var(--border);color:var(--text);width:2.25rem;height:2.25rem;border-radius:50%;cursor:pointer;font-size:1rem}
 .burger{display:none;background:none;border:0;color:var(--text);font-size:1.5rem;cursor:pointer}
 .hero{min-height:100vh;display:flex;align-items:center;padding-top:6rem;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;width=600px;height=600px;right=-150px;top=-100px;background=radial-gradient(circle,color-mix(in srgb,var(--accent) 35%,transparent),transparent 65%);filter:blur(40px);pointer-events:none}
+.hero::before{content:"";position:absolute;width:600px;height:600px;right:-150px;top:-100px;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 35%,transparent),transparent 65%);filter:blur(40px);pointer-events:none}
 .hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:3.5rem;align-items:center;position:relative}
 .hero h1{font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.05;letter-spacing:-.04em;font-weight:800;margin:10px 0 16px}
 .akor{color:#fff}
 :root[data-theme="light"] .akor{color:var(--text)}
 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{color:var(--muted);font-size:1.1rem;max-width:32.5rem}
+.about-divider{display:block;width:4px;height:3.5rem;margin:0 auto 2rem;border-radius:999px;background:linear-gradient(180deg,var(--accent),var(--accent2));box-shadow:0 0 18px rgba(91,140,255,.35)}
 .cta{display:flex;gap:.75rem;margin-top:2rem;flex-wrap:wrap}
 .btn{padding:.75rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--border);transition:transform .2s,box-shadow .2s,background .2s,border-color .2s,color .2s}
 .btn:hover{transform:translateY(-2px)}
@@ -88,6 +89,12 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
   object-fit: contain;
   margin: 0 auto 1rem;
 }
+.section-divider {
+  width: 100vw;
+  height: 4px;
+  margin: 3rem calc(50% - 50vw);
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
 </style>
 </head>
 <body>
@@ -128,6 +135,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
  </div>
  <div class="grid g2">
   <div class="card experience-card" style="order:1;">
+    <img class="company-logo" src="assets/stealth_logo.png" alt="Stealth Startup logo">
   <h3>Developer Experience</h3>
 
   <p><strong>Software Engineer</strong> · January 2026 – Present<br>
@@ -154,6 +162,8 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
  </div>
 </div></section>
 
+<div class="section-divider" aria-hidden="true"></div>
+
 <section id="skills" class="skills"><div class="wrap reveal">
  <span class="eyebrow">Explore my</span><h2>Skills</h2>
  <h3>Frontend &amp; tooling</h3>
@@ -169,6 +179,8 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
   <span class="chip"><img src="assets/matlab-logo.png" alt="" onerror="this.remove()">MATLAB <small>Experienced</small></span><span class="chip"><img src="assets/solidworks-logo.png" alt="" onerror="this.remove()">SolidWorks <small>Experienced</small></span>
  </div>
 </div></section>
+
+<div class="section-divider" aria-hidden="true"></div>
 
 <section id="projects" class="proj"><div class="wrap reveal">
  <span class="eyebrow">Browse my recent</span><h2>Projects</h2>
