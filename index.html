@@ -55,8 +55,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 .about p{max-width:45rem;font-size:1.05rem;margin-bottom:32px}
 .about .grid.g2{gap:1.25rem;margin-top:3rem}
 .about .experience-card,.about .education-card{text-align:center}
+.about .experience-card{padding:.8rem 1rem}
 .about .experience-card ul{max-width:42rem;margin:1rem auto 0;text-align:left}
-.work-history-title{text-align:center;margin:0 0 1.5rem;font-size:1.5rem}
+.work-history-title{text-align:center;margin:3rem 0 1.5rem;font-size:1.5rem}
 .video-wrap{margin-bottom:8rem;margin-top:2rem}
 .video-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;overflow:hidden}
 .video-card h3{font-size:1.1rem;margin-bottom:14px;text-align:center}
@@ -84,9 +85,9 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
  .links.open{display:flex}.links a{padding:12px 0}
 }
 .company-logo {
-  width: 200%;
-  max-width: 20rem;
-  height: 10rem;
+  width: 100%;
+  max-width: 12rem;
+  height: 6rem;
   object-fit: contain;
   margin: 0 auto 1rem;
 }
@@ -94,7 +95,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
   width: 100vw;
   height: 4px;
   margin: 3rem calc(50% - 50vw);
-  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  background: black
 }
 </style>
 </head>
@@ -123,7 +124,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
  <img class="avatar" data-ph="AA" src="assets/profile-pic.jpg" alt="Portrait of Anthony Akor">
 </div></header>
 
-<section id="about" class="about"><div class="wrap reveal">
+<section id="about" class="about"><div class="wrap">
  <span class="eyebrow">Get to know more</span><h2>About me</h2>
  <p>I’m a graduate student at California State University, Dominguez Hills, pursuing a Master’s in Systems Engineering, and I hold a Bachelor’s in Information Systems from the same university. I’m a full-stack developer who takes ownership of the entire build and makes sure every piece works the way it should.</p>
  <div class="video-wrap">
@@ -134,6 +135,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
    </div>
   </div>
  </div>
+ <div class="section-divider" aria-hidden="true"></div>
  <h3 class="work-history-title">Work History</h3>
  <div class="grid g2">
   <div class="card experience-card" style="order:1;">
@@ -166,7 +168,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
 
 <div class="section-divider" aria-hidden="true"></div>
 
-<section id="skills" class="skills"><div class="wrap reveal">
+<section id="skills" class="skills"><div class="wrap">
  <span class="eyebrow">Explore my</span><h2>Skills</h2>
  <h3>Frontend &amp; tooling</h3>
  <div class="chips">
@@ -184,7 +186,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
 
 <div class="section-divider" aria-hidden="true"></div>
 
-<section id="projects" class="proj"><div class="wrap reveal">
+<section id="projects" class="proj"><div class="wrap">
  <span class="eyebrow">Browse my recent</span><h2>Projects</h2>
  <div class="grid g3">
   <article class="card"><img class="thumb" src="assets/project-1.png" data-ph="Portfolio Website" alt="Portfolio website screenshot" loading="lazy">
@@ -199,7 +201,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;color:var(--muted);f
  </div>
 </div></section>
 
-<section id="contact" class="contact"><div class="wrap reveal">
+<section id="contact" class="contact"><div class="wrap">
  <span class="eyebrow">Get in touch</span><h2>Let’s work together</h2>
  <p>Open to collaboration and job opportunities.</p>
  <div class="cta" style="justify-content:center">
@@ -222,7 +224,7 @@ document.querySelectorAll('img[data-ph]').forEach(img=>{
  if(img.complete&&!img.naturalWidth)swap();else img.addEventListener('error',swap,{once:true});
 });
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('section').forEach(el=>{el.classList.add('reveal');io.observe(el)});
 </script>
 </body>
 </html>
